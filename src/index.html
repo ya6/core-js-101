@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<script>
+//   function removeFirstOccurrences(str, value) {
+// // return  str.substr(value.indexOf(value) +  value.length, value.length);
+// // return  str.substr(0, str.indexOf(value)) +  str.substr(str.indexOf(value)+value.length, str.length);
+// return str.slice(0, str.indexOf(value)) + str.slice( str.indexOf(value)+value.length, str.length);
+
+//   }
+
+function removeFirstOccurrences(str, value) {
+  let rez = str.slice(0, str.indexOf(value));
+  rez  += str.slice(str.indexOf(value) + value.length, str.length);
+  return rez;
+}
+
+
+  console.log(removeFirstOccurrences('To be or not to be', 'not'));
+
+  console.log(removeFirstOccurrences('I like legends', 'end'));
+  console.log(removeFirstOccurrences('ABABAB', 'BA'));
+
+
+</script>
+</body>
+</html>
