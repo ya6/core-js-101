@@ -1,32 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
+
 <body>
-<script>
-//   function removeFirstOccurrences(str, value) {
-// // return  str.substr(value.indexOf(value) +  value.length, value.length);
-// // return  str.substr(0, str.indexOf(value)) +  str.substr(str.indexOf(value)+value.length, str.length);
-// return str.slice(0, str.indexOf(value)) + str.slice( str.indexOf(value)+value.length, str.length);
+  <script>
+    //   function removeFirstOccurrences(str, value) {
+    // // return  str.substr(value.indexOf(value) +  value.length, value.length);
+    // // return  str.substr(0, str.indexOf(value)) +  str.substr(str.indexOf(value)+value.length, str.length);
+    // return str.slice(0, str.indexOf(value)) + str.slice( str.indexOf(value)+value.length, str.length);
 
-//   }
+    //   }
 
-function removeFirstOccurrences(str, value) {
-  let rez = str.slice(0, str.indexOf(value));
-  rez  += str.slice(str.indexOf(value) + value.length, str.length);
-  return rez;
+    // function removeFirstOccurrences(str, value) {
+    //   let rez = str.slice(0, str.indexOf(value));
+    //   rez  += str.slice(str.indexOf(value) + value.length, str.length);
+    //   return rez;
+    // }
+
+
+    //   console.log(removeFirstOccurrences('To be or not to be', 'not'));
+
+    //   console.log(removeFirstOccurrences('I like legends', 'end'));
+    //   console.log(removeFirstOccurrences('ABABAB', 'BA'));
+
+
+    //   function getRectangleString(width, height) {
+    //   let str = '';
+    //   str += `┌${'─'.repeat(width-2)}┐\n`;
+
+    //   for (let index = 0; index < height-2; index++) {
+
+    //     str += `|${' '.repeat(width-2)}|\n`;
+    //   }
+    //   str += `└${'─'.repeat(width-2)}┘\n`;
+
+    // return str;
+    // }
+
+    // console.log( getRectangleString(3, 3))
+
+    // function char(cr, ch2) {
+    //   console.log(cr.charCodeAt(0) - ch2.charCodeAt(0));
+    //   console.log(cr.charCodeAt(0));
+    //   console.log(ch2.charCodeAt(0));
+    // }
+
+    // function char_(str) {
+
+    //   const arr = str.split('');
+
+    //   let newArr = arr.map((el) => {
+    //       console.log(el);
+    //       if (el.charCodeAt(0) >= 65 && el.charCodeAt(0) <= 77) return String.fromCharCode((el.charCodeAt(0) + 13))
+    //       if (el.charCodeAt(0) >= 78 && el.charCodeAt(0) <= 90) return String.fromCharCode((el.charCodeAt(0) - 13));
+
+    //       if (el.charCodeAt(0) >= 97 && el.charCodeAt(0) <= 109) return String.fromCharCode((el.charCodeAt(0) + 13))
+    //       if (el.charCodeAt(0) >= 110 && el.charCodeAt(0) <= 122) return String.fromCharCode((el.charCodeAt(0) - 13));
+
+    //       });
+    //       console.log(newArr);
+    //     return newArr.join('');
+    //   }
+
+
+
+    //   char('n', 'z');
+
+    //   console.log(char_('hello'));
+
+
+    function isString(value) {
+ // const asv = (typeof value === 'string');
+  if(typeof value === 'string' || typeof s.toString() === 'string') return true;
+  else return false;
 }
 
-
-  console.log(removeFirstOccurrences('To be or not to be', 'not'));
-
-  console.log(removeFirstOccurrences('I like legends', 'end'));
-  console.log(removeFirstOccurrences('ABABAB', 'BA'));
-
-
-</script>
+console.log(isString(new String('test')));
+  </script>
 </body>
+
 </html>
