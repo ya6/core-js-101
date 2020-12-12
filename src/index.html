@@ -74,13 +74,32 @@
     //   console.log(char_('hello'));
 
 
-    function isString(value) {
- // const asv = (typeof value === 'string');
-  if(typeof value === 'string' || typeof s.toString() === 'string') return true;
-  else return false;
-}
+    //     function isString(value) {
+    //  // const asv = (typeof value === 'string');
+    //   if(typeof value === 'string' || typeof s.toString() === 'string') return true;
+    //   else return false;
+    // }
 
-console.log(isString(new String('test')));
+    // console.log(isString(new String('test')));
+    // console.log('start');
+    // for (let index = 0; index < 10; index++) {
+    //   setTimeout(() => {
+
+    //     console.log(index);
+    //   }, index*1000);
+
+
+    // }
+    // console.log('end');
+
+
+    function getDistanceBetweenPoints(x1, y1, x2, y2) {
+
+     
+  return Math.sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
+}
+console.log(getDistanceBetweenPoints(-5, 0, 10, -10));
+
   </script>
 </body>
 
